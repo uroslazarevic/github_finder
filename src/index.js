@@ -8,11 +8,10 @@ import './App.css';
 import reducers from './reducers';
 import promise from 'redux-promise';
 import thunk from 'redux-thunk';
-import reduxMulti from 'redux-multi';
 
 import { AppRouter } from 'components';
 
-const createStoreWithMiddleware = applyMiddleware(promise, thunk, reduxMulti)(createStore);
+const createStoreWithMiddleware = applyMiddleware(promise, thunk)(createStore);
 
 ReactDOM.render(
   <Provider

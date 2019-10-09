@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-// import SearchedTerms from './searchedTerms'
+import Github from './github';
 
 const rootReducer = combineReducers({
-  validReducer: { state: ['hello'] },
+  github: Github,
 });
 
 export default rootReducer;

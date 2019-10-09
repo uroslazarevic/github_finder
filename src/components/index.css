@@ -1,3 +1,122 @@
-.test h3 {
-  background: #f4f4f4;
-  text-align: center; }
+.github-finder .search-github-header .search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: cadetblue;
+  height: 100px; }
+  .github-finder .search-github-header .search span {
+    font-size: 40px;
+    color: #fff;
+    padding-right: 10px; }
+  .github-finder .search-github-header .search .search-div {
+    position: relative; }
+    .github-finder .search-github-header .search .search-div input {
+      height: 40px;
+      max-width: 300px;
+      min-width: 150px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      padding-left: 15px;
+      font-size: 20px; }
+    .github-finder .search-github-header .search .search-div .search-loader {
+      height: 35px;
+      right: 10px;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%); }
+
+.github-finder .github-users h2 {
+  text-align: center;
+  color: cadetblue; }
+
+.github-finder .github-users .profile-list {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px; }
+  .github-finder .github-users .profile-list li {
+    display: flex;
+    flex-direction: row;
+    background: floralwhite;
+    padding: 25px;
+    border-radius: 4px;
+    cursor: pointer; }
+    .github-finder .github-users .profile-list li img {
+      max-height: 150px;
+      max-width: 150px;
+      border-radius: 8px; }
+    .github-finder .github-users .profile-list li .profile-info {
+      padding-left: 20px; }
+      .github-finder .github-users .profile-list li .profile-info .username {
+        font-size: 24px;
+        line-height: 34px;
+        font-weight: bold; }
+      .github-finder .github-users .profile-list li .profile-info .location {
+        font-size: 18px;
+        line-height: 24px; }
+      .github-finder .github-users .profile-list li .profile-info .biography {
+        font-size: 16px;
+        line-height: 20px; }
+
+@media (max-width: 1200px) {
+  .github-finder .github-users .profile-list li {
+    padding: 20px;
+    flex-direction: column; }
+    .github-finder .github-users .profile-list li img {
+      margin: 0 auto 0 auto; }
+    .github-finder .github-users .profile-list li .profile-info {
+      padding: 0; }
+      .github-finder .github-users .profile-list li .profile-info .username {
+        padding: 10px 0;
+        text-align: center; } }
+
+@media (max-width: 800px) {
+  .github-finder .github-users .profile-list {
+    grid-template-columns: repeat(2, 1fr); }
+    .github-finder .github-users .profile-list li {
+      text-align: center; } }
+
+@media (max-width: 500px) {
+  .github-finder .github-users .profile-list {
+    grid-gap: 1px;
+    grid-template-columns: 1fr; }
+    .github-finder .github-users .profile-list li {
+      text-align: center;
+      flex-direction: row;
+      padding: 10px 50px; }
+      .github-finder .github-users .profile-list li img {
+        margin: 0;
+        margin-right: 20px;
+        width: 100px;
+        height: 100px; }
+      .github-finder .github-users .profile-list li .profile-info {
+        width: 100%; }
+        .github-finder .github-users .profile-list li .profile-info .username {
+          font-size: 19px;
+          line-height: 25px; }
+        .github-finder .github-users .profile-list li .profile-info .location,
+        .github-finder .github-users .profile-list li .profile-info .biography {
+          font-size: 16px;
+          line-height: 19px; } }
+
+@media (max-width: 400px) {
+  .github-finder .github-users .profile-list {
+    grid-gap: 1px;
+    grid-template-columns: 1fr; }
+    .github-finder .github-users .profile-list li {
+      text-align: center;
+      flex-direction: row;
+      padding: 10px 30px; }
+      .github-finder .github-users .profile-list li img {
+        margin: 0; }
+      .github-finder .github-users .profile-list li .profile-info {
+        width: 100%;
+        padding-left: 10px; }
+        .github-finder .github-users .profile-list li .profile-info .username {
+          font-size: 16px;
+          line-height: 20px; }
+        .github-finder .github-users .profile-list li .profile-info .location,
+        .github-finder .github-users .profile-list li .profile-info .biography {
+          font-size: 14px;
+          line-height: 17px; } }
